@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   public appPages = [
-    { title: 'คำนวนดัชนีมวลกาย', url: 'bmi_calculator', icon: 'mail' },
+    { title: 'คำนวนดัชนีมวลกาย', url: 'bmi-calculator', icon: 'mail' },
     { title: 'ผู้จัดทำ', url: 'creator', icon: 'paper-plane' },
   ];
   public labels = [];

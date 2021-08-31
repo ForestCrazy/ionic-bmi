@@ -1,0 +1,21 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title>คำนวณดัชนีมวลกาย</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-item>
+        <ion-label position="floating">Weight: </ion-label>
+        <ion-input [(ngModel)]="weight"></ion-input>
+    </ion-item>
+    <ion-item>
+        <ion-label position="floating">Height: </ion-label>
+        <ion-input [(ngModel)]="height"></ion-input>
+    </ion-item>
+    <ion-card-content>
+        ค่าดัชนีมวลกาย : {{ bmi }}
+        <br/> ภาวะน้ำหนักตัว : {{ bmiLevel }}
+    </ion-card-content>
+    <ion-button color='primary' expand='full' (click)='bmiCalculator()'>คำนวณดัชนีมวลกาย</ion-button>
+</ion-content>
